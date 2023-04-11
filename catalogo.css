@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#D9C9FA;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px auto auto;
+    grid-template-areas: 
+    "c c"
+    "m m"
+    "f f";
+}
+
+
+header{
+    grid-area: c;
+    background-image: url(img/bgcatalogo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img{
+    width: 50%;
+
+}
+main{
+    grid-area: m;
+}
+footer{
+    grid-area: f;
+}
+
+hr {
+    border: 0;
+	border-top: 4px solid #000000;
+    width: 70%;
+    padding-bottom: 5px;
+}
+
+.plus {
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    margin-top: 17px;
+    padding: 40px;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+header> form > input, header > form > img{
+    background: #D9C9FA;
+border: 2px solid #000000;
+border-radius: 48px;
+}
+@media (max-width:756px) {
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        "c"
+        "m"
+        "f";
+    }
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+}

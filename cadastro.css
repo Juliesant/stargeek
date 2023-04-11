@@ -1,0 +1,92 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90vh 10vh;
+    grid-template-areas:
+    "i f"
+    "i r";
+}
+
+main {
+    grid-area: i;
+    background-image: url(img/bg1.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+aside{
+    grid-area: f;
+    background-color: #D9C9FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    row-gap: 15px;
+}
+
+form > input {
+    border-radius: 5px;
+}
+
+form > input:hover{
+    background-color: rgb(224, 220, 220);
+}
+form > input[type="submit"]{
+    background-color: #5B2969;
+    font-size: 2rem;
+    color: aliceblue;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+form > input[type="email"]{
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+form > input[type="password"]{
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+
+form > label{
+    font-size: 2rem;
+}
+
+footer{
+    grid-area: r;
+    background-color: #D9C9FA;
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+
+form  legend {
+    color: #000000;
+    font-weight: 600;
+    font-size: 40px;
+    font-family: "Open Sans" sans-serif;
+    line-height: 56px;
+    text-align: center;
+    padding: 15px;
+    background-color: #5B2969;
+    border-radius: 324px;
+}
+
