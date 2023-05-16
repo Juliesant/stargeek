@@ -64,6 +64,11 @@ form > input[type="password"]{
     border-radius: 20px;
     border: none;
 }
+form > input[type="name"]{
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
 
 form > label{
     font-size: 2rem;
