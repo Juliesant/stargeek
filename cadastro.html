@@ -15,16 +15,17 @@
         <main> 
         </main>
         <aside>
-            <form action="login.html">
+            <form id="formulario">
+                <div class="mensagem"></div>
                 <legend for="cadastro" id="icadastro">Cadastro</legend>
                 <label for="name">Nome:</label>
-                <input type="name" id="" name="" placeholder="Digite o seu nome">
+                <input type="name" id="nome" name="" placeholder="Digite o seu nome">
                 <label for="imail">Email:</label>
-                <input type="email" id="" name="" placeholder="Digite o seu email">
+                <input type="email" id="email" name="" placeholder="Digite o seu email">
                 <label for="">Senha</label>
-                <input type="password" name="" id="" placeholder="Digite sua senha">  
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">  
                 <label for="">Confirmar senha</label>
-                <input type="password" name="" id="" placeholder="Digite sua senha">               
+                <input type="password" name="senha2" id="senha2" placeholder="Digite sua senha">               
                 <a href="#" class="conta">Já possui conta?</a>
                 <input type="submit" value="ENTRAR">
             </form>
@@ -34,5 +35,6 @@
             <img src="/img/logo.png">
         </footer>
     </div>
+    <script src="cadastro.js"></script>
 </body>
 </html>
