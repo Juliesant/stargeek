@@ -11,26 +11,27 @@
     <body>
         <div class="container">
             <main>
-                <form action="catalogo.html">
+                <form>
                     <legend>ADICIONAR UM NOVO ITEM</legend>
 
                     <label>Nome do título:</label>
-                    <input type="text" style="height: 40px; text-align: center;" placeholder="Digite o nome do título">
+                    <input type="text" id="nome" style="height: 40px; text-align: center;" placeholder="Digite o nome do título">
 
                     <label>Resumo:</label>
                 
                     <textarea id="resumo" placeholder="Escreva aqui seu resumo"  cols="30" rows="10"></textarea>
                    
                     
-                    <input type="file" id="" name="" placeholder="Escolha uma foto" style="text-align: center;">
+                    <input type="file" id="foto" name="" placeholder="Escolha uma foto" style="text-align: center;">
                     
                
-                    <input type="submit" class="botao" value="Finalizar">
+                    <input id="botao" type="submit" class="botao" value="Finalizar">
                
 
                 </form>
             </main>
 
         </div>
+        <script src="script.js"></script>
 </body>
 </html>

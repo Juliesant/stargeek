@@ -50,12 +50,36 @@ hr {
     padding: 10px;
 }
 
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    width: 100vw;
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .card {
     display: flex;
     margin-top: 17px;
     padding: 40px;
     justify-content: center;
+    flex-direction: column;
+    background-color: #bda6ec;
+    border-radius: 20%;
+    box-shadow: #000000;
 }
+
+.card img{
+    width: 270px;
+    height: 270px;
+    border-radius: 15%;
+}
+
+
 
 form {
     display: flex;

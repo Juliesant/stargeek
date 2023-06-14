@@ -5,6 +5,7 @@ const email = document.getElementById ("email");
 const senha = document.getElementById("senha");
 const senha2 = document.getElementById("senha2");
 
+
 formulario.onsubmit = (evento) => {
     if(nome.value == ""){
         evento.preventDefault();
@@ -57,3 +58,4 @@ formulario.onsubmit = (evento) => {
         window.location.assign("login.html")
     }, 3000)
 }
+
